@@ -61,7 +61,7 @@ func outGoingPrompt() []string {
 	}
 	outgoingArray := strings.Split(outgoing, ",")
 
-	fmt.Printf("Your mixed Jobcoins will be sent the following address: %s\n", utils.Green(outgoingArray))
+	fmt.Printf("Your mixed Jobcoins will be sent the following addresses: %s\n", utils.Green(outgoingArray))
 	return outgoingArray
 }
 
@@ -78,7 +78,7 @@ func executeJob(random bool, delay bool, outgoingArray []string) {
 	s := spinner.New(spinner.CharSets[7], 100*time.Millisecond)
 	s.Start()
 	depositAddress := jobcoin.GenerateNewDepositAddress()
-	fmt.Printf("Please send your Jobcoins to this addresses: %s\n", utils.Green(depositAddress))
+	fmt.Printf("Please send your Jobcoins to this address: %s\n", utils.Green(depositAddress))
 	fmt.Println("Scanning for incoming Jobcoins")
 	var amount string
 	for found == false {
