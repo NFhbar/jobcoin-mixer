@@ -44,7 +44,7 @@ The mixer will prompt the following:
 
 ![alt text](docs/1.png)
 
-We can now enter out destination addresses, up to 5 comma separated addresses:
+We can now enter our destination addresses, up to 5 comma separated addresses:
 
 ![alt text](docs/2.png)
 
