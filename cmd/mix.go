@@ -67,7 +67,7 @@ func outGoingPrompt() []string {
 
 func outgoingInput() promptui.Prompt {
 	prompt := promptui.Prompt{
-		Label:    utils.Blue("Enter up to 5 addresses -comma separated- where receive your mixed Jobcoins"),
+		Label:    utils.Blue("Enter up to 5 addresses -comma separated- where to receive your mixed Jobcoins"),
 		Validate: addressValidate,
 	}
 	return prompt
