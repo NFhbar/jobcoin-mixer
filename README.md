@@ -34,6 +34,30 @@ When `true`, the mixer will add a random delay in between distributions.
 
 To display the help messages.
 
+## Example
+
+After installing, run:
+
+`$ mixer mix -r -d`
+
+The mixer will prompt the following:
+
+![alt text](docs/1.png)
+
+We can now enter out destination addresses, up to 5 comma separated addresses:
+
+![alt text](docs/2.png)
+
+At this point, the mixer will generate a unique address for our coins. The mixer will now scan this newly created address for an incoming deposit.
+
+![alt text](docs/3.png)
+
+After a deposit is detected, the mixer will then move the coins from this address to the main house mixer address. It will then calculate the total for distributions minus the fee (1%). Since we included the `--random` flag, the mixer will generate non-equal amounts to be distributed across the destination addresses. The `--delay` flag indicates to the mixer that a random delay should be used in between distributions.
+
+![alt text](docs/4.png)
+
+Finally, we will receive our mixed coins in our destination addresses.
+
 ## UI
 
 A useful dashboard can be found here [https://jobcoin.gemini.com/certainly-thursday](https://jobcoin.gemini.com/certainly-thursday).
